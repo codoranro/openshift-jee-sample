@@ -18,7 +18,7 @@
 <!-- https://mvnrepository.com/artifact/com.netflix.dynomite-manager/dynomitemanager-web -->
 <dependency>
     <groupId>com.netflix.dynomite-manager</groupId>
-    <artifactId>dynomitemanager-web</artifactId>
+    <artifactId>dynomitemanager</artifactId>
     <version>1.0.1</version>
 </dependency>
     </dependencies>
