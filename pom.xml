@@ -20,6 +20,7 @@
     <groupId>com.netflix.dynomite-manager</groupId>
     <artifactId>dynomitemanager</artifactId>
     <version>1.0.1</version>
+    <scope>provided</scope>
 </dependency>
     </dependencies>
 
