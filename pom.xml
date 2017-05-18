@@ -15,12 +15,12 @@
     </properties>
     
     <dependencies>
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
+<!-- https://mvnrepository.com/artifact/com.netflix.dynomite-manager/dynomitemanager-web -->
+<dependency>
+    <groupId>com.netflix.dynomite-manager</groupId>
+    <artifactId>dynomitemanager-web</artifactId>
+    <version>1.0.1</version>
+</dependency>
     </dependencies>
 
 <profiles>
