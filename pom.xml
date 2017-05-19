@@ -34,16 +34,31 @@
      <build>
         <finalName>SampleApp</finalName>
         <plugins>
-          <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
-                </configuration>
-            </plugin>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <version>2.3</version>
+    <executions>
+      <execution>
+        <phase>package</phase>
+        <goals>
+          <goal>copy</goal>
+        </goals>
+        <configuration>
+          <artifactItems>
+            <artifactItem>
+                  <groupId>com.netflix.dynomite-manager</groupId>
+    <artifactId>dynomitemanager-web</artifactId>
+    <version>1.0.1</version>
+              <type>war</type>
+              <destFileName>dynomitemanager-web.war</destFileName>
+            </artifactItem>
+          </artifactItems>
+          <outputDirectory>${project.build.directory}</outputDirectory>
+        </configuration>
+      </execution>
+    </executions>
+  </plugin>
         </plugins>
       </build>
     </profile>
